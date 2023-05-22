@@ -79,7 +79,6 @@
 
 .goals-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   margin-top: 32px;
 }
@@ -176,4 +175,38 @@
   font-size: 75px;
   font-weight: bold;
   text-align: center;
+}
+
+@media (width <= 904px) {
+  .headline-landing {
+    padding: 0 16px;
+  }
+
+  .headline-caps {
+    font-size: 24px;
+  }
+
+  .goals-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .reviews-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (width <= 600px) {
+  .feature-content-container {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
+  .feature-card {
+    max-width: 100%;
+  }
 }
