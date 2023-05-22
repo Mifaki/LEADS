@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/7fca5586a4.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../../Styles/Global.css" />
     <link rel="stylesheet" href="../../Styles/HeaderFooter.css" />
     <link rel="stylesheet" href="../../Styles/Landing.css" />
@@ -11,16 +17,21 @@
   <body>
     <header class="main-container header-container">
       <img alt="logo" src="../../Assets/LogoBlack.svg" class="logo" />
-      <div class="nav">
-        <p>Home</p>
-        <p>About Us</p>
-        <p>History</p>
-        <p>FAQ</p>
+      <input type="checkbox" id="check" />
+      <div class="menu">
+        <div class="nav">
+          <p>Home</p>
+          <p>About Us</p>
+          <p>History</p>
+          <p>FAQ</p>
+        </div>
+        <div class="button-header-container">
+          <button class="register-button">Daftar</button>
+          <button class="login-button">Masuk</button>
+        </div>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
       </div>
-      <div class="button-header-container">
-        <button class="register-button">Daftar</button>
-        <button class="login-button">Masuk</button>
-      </div>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
     </header>
     <main>
       <div class="headline-landing">
@@ -160,7 +171,7 @@
         </div>
       </section>
       <div class="main-container">
-        <p style="font-weight: bold; margin-bottom: 8px;">
+        <p style="font-weight: bold; margin-bottom: 8px">
           Tunggu apalagi ayo mulai perjuanganmu dengan LEADS
         </p>
         <button class="register-button-landing">Mulai Sekarang</button>
@@ -171,12 +182,6 @@
         <div class="footer-line"></div>
         <div class="footer-content">
           <img alt="logo" src="../../Assets/Logo.svg" class="logo" />
-          <div class="nav">
-            <p>Home</p>
-            <p>About Us</p>
-            <p>History</p>
-            <p>FAQ</p>
-          </div>
           <div class="footer-icon">
             <img alt="logo" src="../../Assets/Footer/dribble.svg" />
             <img alt="logo" src="../../Assets/Footer/instagram.svg" />
