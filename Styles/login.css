@@ -1,110 +1,109 @@
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 100vh;
-    grid-template-rows: 100dvh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100vh;
+  grid-template-rows: 100dvh;
 }
 
 .fit-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 main {
-    top: 5%;
-    position: relative;
-    display: grid;
-    gap: 3rem;
+  top: 5%;
+  position: relative;
+  display: grid;
+  gap: 3rem;
 }
 
 .logo {
-    width: 30%;
+  width: 30%;
 }
 
 main form {
-    display: grid;
-    gap: 3rem;
+  display: grid;
+  gap: 3rem;
 }
 
 .form-group {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 0.5rem;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.5rem;
+  align-items: center;
 }
 
 main form img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 main input,
 button {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
 
-    border-style: solid;
-    border-color: #afb1b6;
+  border-style: solid;
+  border-color: #afb1b6;
 
-    box-sizing: border-box;
-    padding: 10px;
-    height: 2.5em;
-    border-radius: 8px;
-    width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 2.5em;
+  border-radius: 8px;
+  width: 100%;
 }
 
 main input:active,
 input:focus {
-    border-style: none;
-    outline-color: transparent;
+  border-style: none;
+  outline-color: transparent;
 }
 
 main label {
-    font-weight: 600;
-    line-height: 150%;
+  font-weight: 600;
+  line-height: 150%;
 }
 
 main button {
-    border-style: none;
-    outline-color: transparent;
+  border-style: none;
+  outline-color: transparent;
 
-    cursor: pointer;
-    font-weight: 600;
-    color: white;
-    background-color: #3093de;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  background-color: #3093de;
 }
 
 .anchor-style {
-    text-decoration: none;
-    font-weight: 600;
-    line-height: 150%;
-    text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
 }
 
 .anchor-style:hover,
 .anchor-style:focus {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .input-with-icon {
-    display: grid;
-    grid-template-columns: repeat(10, 10%);
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
 }
 
 .input-with-icon input {
-    grid-column: 1 / 11;
-    grid-row: 1 / 2;
-    padding: 10px 55px 10px 10px;
+  grid-column: 1 / 11;
+  grid-row: 1 / 2;
+  padding: 10px 55px 10px 10px;
 }
 
 .input-with-icon img {
-    grid-column: 10 / 11;
-    grid-row: 1 / 2;
-    width: 2em;
-    margin-right: 1em;
-    z-index: 1;
-    justify-self: center;
-    align-self: center;
+  grid-column: 10 / 11;
+  grid-row: 1 / 2;
+  width: 2em;
+  margin-right: 1em;
+  z-index: 1;
+  justify-self: center;
+  align-self: center;
 }
-
