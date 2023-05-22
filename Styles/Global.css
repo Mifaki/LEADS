@@ -3,86 +3,86 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-    display: block;
-    box-sizing: border-box;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: black;
-    margin: 0;
-    padding: 0;
+  display: block;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
 }
 
 .col-1 {
-    width: 8.33%;
+  width: 8.33%;
 }
 
 .col-2 {
-    width: 16.6%;
+  width: 16.6%;
 }
 .col-3 {
-    width: 25%;
+  width: 25%;
 }
 .col-4 {
-    width: 33.33%;
+  width: 33.33%;
 }
 .col-5 {
-    width: 41.66%;
+  width: 41.66%;
 }
 .col-6 {
-    width: 50%;
+  width: 50%;
 }
 .col-7 {
-    width: 58.33%;
+  width: 58.33%;
 }
 .col-8 {
-    width: 66.66%;
+  width: 66.66%;
 }
 .col-9 {
-    width: 75%;
+  width: 75%;
 }
 .col-10 {
-    width: 83.33%;
+  width: 83.33%;
 }
 .col-11 {
-    width: 91.66%;
+  width: 91.66%;
 }
 .col-12 {
-    width: 100%;
+  width: 100%;
 }
 
 body {
-    min-height: 100vh;
-    background-color: white;
+  min-height: 100vh;
+  background-color: white;
 }
 
 .main-container {
-    margin: 48px 156px 0 156px;
-    height: fit-content;
+  margin: 48px 156px 0 156px;
+  height: fit-content;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 @media only screen and (width <= 1240px) {
-    .main-container {
-        margin: 48px 24px 0 24px;
-    }
+  .main-container {
+    margin: 48px 24px 0 24px;
+  }
 }
 
 @media only screen and (width <= 904px) {
-    .main-container {
-        margin: 48px 32px 0 32px;
-    }
+  .main-container {
+    margin: 48px 32px 0 32px;
+  }
 }
 
 @media only screen and (width <= 600px) {
-    .main-container {
-        margin: 48px 16px 0 16px;
-    }
+  .main-container {
+    margin: 48px 16px 0 16px;
+  }
 }
 
 /* responsive images/videos */
@@ -90,6 +90,6 @@ img,
 picture,
 svg,
 video {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
