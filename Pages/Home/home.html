@@ -3,11 +3,136 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../Styles/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../Styles/global.css" />
+    <link rel="stylesheet" href="../../Styles/header-footer.css" />
+    <link rel="stylesheet" href="../../Styles/home.css" />
+    <script defer src="../../JS/home.js"></script>
   </head>
   <body>
-    <main class="main-container">
-      <p>p</p>
+    <header class="main-container header-container">
+      <img alt="logo" src="../../Assets/logo-black.svg" class="logo" />
+      <input type="checkbox" id="check" />
+      <div class="menu">
+        <div class="nav">
+          <p>Home</p>
+          <p>About Us</p>
+          <p>History</p>
+          <p>FAQ</p>
+        </div>
+        <div class="button-header-container">
+          <button class="register-button">Daftar</button>
+          <button class="login-button">Masuk</button>
+        </div>
+        <label for="check" class="close-menu"
+          ><i class="fas fa-times"></i
+        ></label>
+      </div>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </header>
+    <main>
+      <img
+        alt="header-image"
+        src="../../Assets/Home/header-image.png"
+        class="header-image"
+      />
+      <div class="main-container">
+        <div class="home-content">
+          <div class="left-content col-3">
+            <div class="filter-header">
+              <p>Filter</p>
+              <i class="fa-solid fa-sort"></i>
+            </div>
+            <div class="filter-content">
+              <p style="font-weight: bold">Kategori</p>
+              <div class="filter-row">
+                <input id="lomba" type="checkbox" class="checkbox" />
+                <p>Lomba</p>
+              </div>
+              <div class="filter-row">
+                <input id="event" type="checkbox" class="checkbox" />
+                <p>Event</p>
+              </div>
+              <div class="filter-row">
+                <input id="beasiswa" type="checkbox" class="checkbox" />
+                <p>Beasiswa</p>
+              </div>
+            </div>
+            <div class="filter-content">
+              <p style="font-weight: bold">Tingkatan</p>
+              <div class="filter-row">
+                <input id="sd" type="checkbox" class="checkbox" />
+                <p>SD</p>
+              </div>
+              <div class="filter-row">
+                <input id="smp" type="checkbox" class="checkbox" />
+                <p>SMP</p>
+              </div>
+              <div class="filter-row">
+                <input id="sma/smk" type="checkbox" class="checkbox" />
+                <p>SMA/SMK</p>
+              </div>
+              <div class="filter-row">
+                <input id="mahasiswa" type="checkbox" class="checkbox" />
+                <p>Mahasiswa</p>
+              </div>
+              <div class="filter-row">
+                <input id="umum" type="checkbox" class="checkbox" />
+                <p>Umum</p>
+              </div>
+            </div>
+            <div class="filter-content">
+              <p style="font-weight: bold">Skala</p>
+              <div class="filter-row">
+                <input id="provinsi" type="checkbox" class="checkbox" />
+                <p>Provinsi</p>
+              </div>
+              <div class="filter-row">
+                <input id="nasional" type="checkbox" class="checkbox" />
+                <p>Nasional</p>
+              </div>
+              <div class="filter-row">
+                <input id="internasional" type="checkbox" class="checkbox" />
+                <p>Internasional</p>
+              </div>
+            </div>
+          </div>
+          <div class="right-content col-8">
+            <div class="search-box">
+              <button class="btn-search" onClick="searchEvents()"><i class="fas fa-search"></i></button>
+              <input
+                type="text"
+                id="search-input"
+                class="input-search"
+                placeholder="Type to Search..."
+              />
+            </div>
+            <div id="event-container">
+              <!-- CARD AUTOMATICALLY GENERATED -->
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer class="footer-container">
+      <div class="main-container">
+        <div class="footer-line"></div>
+        <div class="footer-content">
+          <img alt="logo" src="../../Assets/logo.svg" class="logo" />
+          <div class="footer-icon">
+            <img alt="logo" src="../../Assets/Footer/dribble.svg" />
+            <img alt="logo" src="../../Assets/Footer/instagram.svg" />
+            <img alt="logo" src="../../Assets/Footer/linkedin.svg" />
+          </div>
+        </div>
+        <p class="copyright">&copy; 2023 LEADS. All Rights Reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
