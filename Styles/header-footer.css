@@ -27,6 +27,7 @@
   font-weight: bold;
   gap: 24px;
   cursor: pointer;
+  color: #000000;
 }
 
 #check {
