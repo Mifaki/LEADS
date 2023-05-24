@@ -44,7 +44,7 @@
       />
       <div class="main-container">
         <div class="home-content">
-          <div class="left-content col-3">
+          <div class="left-content">
             <div class="filter-header">
               <p>Filter</p>
               <i class="fa-solid fa-sort"></i>
@@ -102,16 +102,29 @@
                 <p>Internasional</p>
               </div>
             </div>
+            <a href="javascript:void(0);" class="icon close-filter" onclick="openFilter()">
+              <i class="fa fa-times"></i>
+            </a>
           </div>
-          <div class="right-content col-8">
-            <div class="search-box">
-              <button class="btn-search" onClick="searchEvents()"><i class="fas fa-search"></i></button>
-              <input
-                type="text"
-                id="search-input"
-                class="input-search"
-                placeholder="Type to Search..."
-              />
+          <div class="right-content">
+            <div class="mobile-sort">
+              <div class="search-box">
+                <button class="btn-search" onClick="searchEvents()">
+                  <i class="fas fa-search"></i>
+                </button>
+                <input
+                  type="text"
+                  id="search-input"
+                  class="input-search"
+                  placeholder="Type to Search..."
+                />
+              </div>
+              <div class="mobile-filter">
+                <p>Filter</p>
+                <a href="javascript:void(0);" class="icon open-filter" onclick="openFilter()">
+                  <i class="fa fa-sort"></i>
+                </a>
+              </div>
             </div>
             <div id="event-container">
               <!-- CARD AUTOMATICALLY GENERATED -->

@@ -56,7 +56,7 @@ const events = [
   {
     id: "10",
     img: "../../Assets/Home/event-10.png",
-    tags: ["Lomba", "SMP","SMA/SMK","Mahasiswa", "Provinsi"],
+    tags: ["Lomba", "SMP", "SMA/SMK", "Mahasiswa", "Provinsi"],
     title: "Coding Competition",
   },
   {
@@ -68,7 +68,7 @@ const events = [
   {
     id: "12",
     img: "../../Assets/Home/event-12.png",
-    tags: ["Lomba", "SMA/SMK","Mahasiswa", "Umum","Nasional"],
+    tags: ["Lomba", "SMA/SMK", "Mahasiswa", "Umum", "Nasional"],
     title: "Programming Contest Indonesia",
   },
 ];
@@ -107,6 +107,7 @@ function displayEvents(events) {
     eventCard.className = "event-card";
 
     const eventImage = document.createElement("img");
+    eventImage.className = "event-image";
     eventImage.src = event.img;
     eventImage.alt = "event-image";
 
@@ -132,3 +133,12 @@ function displayEvents(events) {
 }
 
 displayEvents(events);
+
+function openFilter() {
+  const filter = document.querySelector(".left-content");
+  if (filter.style.right === "0px") {
+    filter.style.right = "-100%";
+  } else {
+    filter.style.right = "0px";
+  }
+}
