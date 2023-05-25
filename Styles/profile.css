@@ -119,6 +119,10 @@ span {
   color: #737373;
 }
 
+.read-more-button {
+  display: none;
+}
+
 @media (width <= 904px) {
   .profile-detail {
     flex-direction: column;
@@ -168,6 +172,7 @@ span {
   }
   
   .read-more-button {
+    display: block;
     border: none;
     background: none;
     color: #262626;
