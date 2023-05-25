@@ -25,6 +25,10 @@
   gap: 12px;
 }
 
+.mobile-name {
+  display: none;
+}
+
 .profile-top,
 .profile-detail {
   display: flex;
@@ -113,4 +117,61 @@ span {
   font-size: 14px;
   font-weight: bold;
   color: #737373;
+}
+
+@media (width <= 904px) {
+  .profile-detail {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .profile-left {
+    order: 2;
+    width: 100%;
+  }
+
+  .profile-right {
+    order: 1;
+    width: 100%;
+  }
+}
+
+@media (width <= 600px) {
+  .destkop-name {
+    display: none;
+  }
+
+  .mobile-name {
+    display: block;
+  }
+
+  .statistics {
+    font-size: 12px;
+  }
+
+  .experience-image {
+    width: 42px;
+    height: 42px;
+  }
+
+  .experience-subtitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+  }
+
+  .expanded {
+    -webkit-line-clamp: 999999;
+  }
+  
+  .read-more-button {
+    border: none;
+    background: none;
+    color: #262626;
+    font-weight: bolder;
+    text-align: start;
+  }
 }
