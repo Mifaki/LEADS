@@ -25,7 +25,7 @@ The repository is structured as follows:
   - script.js
   - app.js
   - ...
-- Content/
+- Assets/
   - images/
     - image1.jpg
     - image2.png
@@ -51,7 +51,7 @@ All JavaScript files should be placed in the `JS` directory. This directory cont
 
 ### Content Directory
 
-All content-related files, such as images, icons, and other media files, should be placed in the `Content` directory. This directory is further organized into subdirectories based on the type of content.
+All content-related files, such as images, icons, and other media files, should be placed in the `Assets` directory. This directory is further organized into subdirectories based on the type of content.
 
 - The `images` directory stores image files (e.g., `.jpg`, `.png`).
 - The `icons` directory stores SVG icon files.
@@ -64,22 +64,25 @@ Here's an example of how you can use these conventions in your repository:
 ```
 - Pages/
   - index.html
-  - about.html
-  - contact.html
+  - about-page.html
+  - contact-person.html
 - Styles/
   - main.css
-  - responsive.css
+  - responsive-article.css
   - typography.css
+  - header-footer.css
 - JS/
   - script.js
-  - utils.js
-- Content/
+  - auth-utils.js
+- Assets/
   - images/
     - image1.jpg
     - image2.png
+    - profile-picture.png
   - icons/
     - icon1.svg
     - icon2.svg
+    - company-logo.svg
 ```
 
 Please ensure that any new files you create or add to the repository adhere to these conventions. Consistency in file naming and organization will contribute to a better and more maintainable codebase.
