@@ -26,8 +26,13 @@
   font-size: 14px;
   font-weight: bold;
   gap: 24px;
-  cursor: pointer;
   color: #000000;
+}
+
+.nav > p:hover {
+  cursor: pointer;
+  color: #72B6E9;
+  font-weight: bold;
 }
 
 #check {
@@ -140,6 +145,14 @@
     font-size: 24px;
     text-align: center;
     color: #FFFFFF;
+  }
+
+  .nav > p:hover,
+  .login-button:hover,
+  .register-button:hover {
+    color: #FFFFFF;
+    transition: all 0.2s ease-in-out;
+    transform : scale(1.2);
   }
 
   .button-header-container {
