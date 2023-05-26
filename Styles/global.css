@@ -66,6 +66,11 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media only screen and (width <= 1240px) {
   .main-container {
     margin: 48px 24px 0 24px;

@@ -29,7 +29,7 @@
   color: #000000;
 }
 
-.nav > p:hover {
+.nav > a:hover {
   cursor: pointer;
   color: #72B6E9;
   font-weight: bold;
@@ -76,18 +76,19 @@
   cursor: pointer;
   font-size: 24px;
   display: none;
-  color: #000000;
 }
 
 .open-menu {
   top: 7.5%;
   right: 32px;
+  color: #000000;
   transform: translateY(-50%);
 }
 
 .close-menu {
   top: 5%;
   right: 32px;
+  color: #FFFFFF;
 }
 
 .footer-container {
@@ -147,7 +148,7 @@
     color: #FFFFFF;
   }
 
-  .nav > p:hover,
+  .nav > a:hover,
   .login-button:hover,
   .register-button:hover {
     color: #FFFFFF;
