@@ -3,11 +3,177 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../Styles/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../Styles/global.css" />
+    <link rel="stylesheet" href="../../Styles/header-footer.css" />
+    <link rel="stylesheet" href="../../Styles/user-data.css" />
+    <script defer src="../../JS/user-data.js"></script>
   </head>
   <body>
+    <header class="main-container header-container">
+      <img alt="logo" src="../../Assets/logo-black.svg" class="logo" />
+      <input type="checkbox" id="check" />
+      <div class="menu">
+        <div class="nav">
+          <a href="../Home/home.html">Home</a>
+          <a href="../Landing/landing.html">About Us</a>
+          <a href="#">History</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="button-header-container">
+          <button
+            onclick="location.href='../Auth/Register/register.html';"
+            class="register-button"
+          >
+            Daftar
+          </button>
+          <button
+            onclick="location.href='../Auth/Login/login.html';"
+            class="login-button"
+          >
+            Masuk
+          </button>
+        </div>
+        <label for="check" class="close-menu"
+          ><i class="fas fa-times"></i
+        ></label>
+      </div>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </header>
     <main class="main-container">
-      <p>p</p>
+      <div class="user-data-container">
+        <div class="user-left">
+          <div class="user-overview">
+            <img
+              alt="photo profile"
+              src="../../Assets/Profile/photo-profile.png"
+            />
+            <div>
+              <span>Budi Setiawan</span>
+              <p>budi@gmail.com</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="icon-text">
+            <img alt="personal" src="../../Assets/UserData/personal.svg" />
+            <span>Data Personal</span>
+          </div>
+          <div class="icon-text">
+            <img alt="personal" src="../../Assets/UserData/award.svg" />
+            <span>Penghargaan</span>
+          </div>
+          <div class="icon-text">
+            <img alt="personal" src="../../Assets/UserData/history.svg" />
+            <span>Riwayat</span>
+          </div>
+          <div class="icon-text">
+            <img alt="personal" src="../../Assets/UserData/academic.svg" />
+            <span>Akademik</span>
+          </div>
+          <div class="divider"></div>
+          <div class="icon-text">
+            <img alt="personal" src="../../Assets/UserData/logOut.svg" />
+            <span>Keluar</span>
+          </div>
+        </div>
+        <div class="user-right">
+          <span style="font-size: 24px">Data Personal</span>
+          <img
+            alt="banner"
+            src="../../Assets/Profile/profile-banner.png"
+            class="banner"
+          />
+          <div class="change-photo">
+            <img
+              alt="photo profile"
+              src="../../Assets/Profile/photo-profile.png"
+              style="border-radius: 100px"
+            />
+            <button class="register-button">Ubah Gambar</button>
+          </div>
+          <label class="input">
+            <input
+              class="input__field"
+              type="text"
+              placeholder=" "
+              value="Budi Setiawan"
+            />
+            <span class="input__label">Nama Lengkap</span>
+          </label>
+          <p class="action-text">Jenis Kelamin</p>
+          <form class="radio-container">
+            <div>
+              <input
+                type="radio"
+                id="pria"
+                name="user_gender"
+                value="Pria"
+                checked
+              />
+              <label for="pria">Pria</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="wanita"
+                name="user_gender"
+                value="Wanita"
+              />
+              <label for="wanita">Wanita</label>
+            </div>
+          </form>
+          <label class="input">
+            <input
+              class="input__field"
+              type="text"
+              placeholder=" "
+              value="Undergraduate Information Technology Student at University of Brawijaya"
+            />
+            <span class="input__label">Deskripsi</span>
+          </label>
+          <div>
+            <p class="action-text">Deskripsi</p>
+            <textarea
+              placeholder="Type many lines of texts in here and you will see magic stuff"
+              class="txt-area"
+              oninput="adjustTextareaHeight(this)"
+            >Saya melakukan penelitian mendalam tentang preferensi pengguna, menganalisis tren terkini, dan menggabungkan elemen-elemen desain yang efektif. Saya fokus pada keselarasan visual, kegunaan, dan pengalaman pengguna yang optimal. Melalui perjuangan dan kerja keras, saya berhasil menciptakan antarmuka yang memenangkan persaingan sengit. Pengalaman ini memperkuat keyakinan saya dalam menjadi seorang desainer yang kreatif, terampil, dan berprestasi di masa depan.
+            </textarea>
+          </div>
+          <section id="awards">
+            <span style="font-size: 24px">Penghargaann</span>
+           <!-- DETAIL AUTOMATICALLY GENERATED -->
+          </section>
+          <section id="history">
+            <span style="font-size: 24px">Riwayat</span>
+           <!-- DETAIL AUTOMATICALLY GENERATED -->
+          </section>
+          <section id="academic">
+            <span style="font-size: 24px">Akademik</span>
+           <!-- DETAIL AUTOMATICALLY GENERATED -->
+          </section>
+        </div>
+      </div>
     </main>
+    <footer class="footer-container">
+      <div class="main-container">
+        <div class="footer-line"></div>
+        <div class="footer-content">
+          <img alt="logo" src="../../Assets/logo.svg" class="logo" />
+          <div class="footer-icon">
+            <img alt="logo" src="../../Assets/Footer/dribble.svg" />
+            <img alt="logo" src="../../Assets/Footer/instagram.svg" />
+            <img alt="logo" src="../../Assets/Footer/linkedin.svg" />
+          </div>
+        </div>
+        <p class="copyright">&copy; 2023 LEADS. All Rights Reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
