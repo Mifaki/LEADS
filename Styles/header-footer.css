@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 24px;
-  color: white;
 }
 
 .logo {
@@ -39,9 +38,19 @@
   display: none;
 }
 
-.button-header-container {
+.button-header-container,
+.user-header-container {
   display: flex;
+  align-items: center;
   gap: 24px;
+}
+
+.user-header-container {
+  cursor: pointer;
+}
+
+.user-name {
+  font-weight: bold;
 }
 
 .register-button {
@@ -68,6 +77,21 @@
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.user-image {
+  aspect-ratio: 1;
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+}
+
+.user-mobile {
+  display: none;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .open-menu,
@@ -148,9 +172,18 @@
     color: #FFFFFF;
   }
 
+  .user-header-container {
+    display: none;
+  }
+
+  .user-mobile {
+    display: block;
+  }
+
   .nav > a:hover,
   .login-button:hover,
-  .register-button:hover {
+  .register-button:hover,
+  .user-mobile:hover {
     color: #FFFFFF;
     transition: all 0.2s ease-in-out;
     transform : scale(1.2);
