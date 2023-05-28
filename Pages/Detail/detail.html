@@ -3,11 +3,165 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../Styles/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../Styles/global.css" />
+    <link rel="stylesheet" href="../../Styles/header-footer.css" />
+    <link rel="stylesheet" href="../../Styles/detail.css" />
   </head>
   <body>
+    <header class="main-container header-container">
+      <img alt="logo" src="../../Assets/logo-black.svg" class="logo" />
+      <input type="checkbox" id="check" />
+      <div class="menu">
+        <div class="nav">
+          <a href="../Home/home.html">Home</a>
+          <a href="../Landing/landing.html">About Us</a>
+          <a href="#">History</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="button-header-container">
+          <button
+            onclick="location.href='../Auth/Register/register.html';"
+            class="register-button"
+          >
+            Daftar
+          </button>
+          <button
+            onclick="location.href='../Auth/Login/login.html';"
+            class="login-button"
+          >
+            Masuk
+          </button>
+        </div>
+        <label for="check" class="close-menu"
+          ><i class="fas fa-times"></i
+        ></label>
+      </div>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </header>
     <main class="main-container">
-      <p>p</p>
+      <img alt="banner" src="../../Assets/Detail/banner.jpg" class="banner" />
+      <div class="detail-top-container">
+        <div class="title-container">
+          <div class="tags">
+            <span class="tag">Lomba</span>
+            <span class="tag">Mahasiswa</span>
+            <span class="tag">Nasional</span>
+            <span class="tag">Tim</span>
+            <span class="tag">Berbayar</span>
+          </div>
+          <h1>Ui/Ux Design Find It</h1>
+          <div class="statistics-container">
+            <div>
+              <img
+                alt="participants"
+                src="../../Assets/Detail/participants.svg"
+              />
+              <p>Participated by 80 team</p>
+            </div>
+            <div>
+              <img alt="participants" src="../../Assets/Detail/liked.svg" />
+              <p>Liked by 200 peoples</p>
+            </div>
+          </div>
+        </div>
+        <div class="deadline-container">
+          <div class="deadline-between">
+            <p>Open Registration</p>
+            <span>20 Mei 2023</span>
+          </div>
+          <div class="deadline-between">
+            <p>Close Registration</p>
+            <span>10 Agustus 2023</span>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <span>Tentang</span>
+        <p style="text-align: justify">
+          FIND IT atau kependekan dari Future Innovation and Discovery
+          Information and Technology, merupakan sebuah acara/event tahunan yang
+          diselenggarakan oleh DTETI FT UGM dimana pada event ini terdapat
+          beberapa acara diantaranya workshop dengan nama IT Academy, pameran
+          dengan nama IT Fest, dan lomba-lomba seperti Competitive Programming,
+          Data Analytics Competition, Hackathon, Capture the Flag, dan E-sport.
+          Event ini bertujuan untuk mengembangkan dan memberi wadah bagi
+          masyarakat yang tertarik ke dunia TI serta menarik minat sekaligus
+          memperkenalkan TI ke masyarakat luas; apalagi di tengah era revolusi
+          5.0 dimana teknologi berkembang sangat pesat.
+        </p>
+      </div>
+      <div class="details">
+        <div>
+          <span>Syarat dan Ketentuan</span>
+          <ul>
+            <li>
+              Seluruh peserta wajib mematuhi ketentuan-ketentuan yang berlaku
+              selama Find IT! 2023, baik ketentuan umum maupun ketentuan setiap
+              acara atau perlombaan.
+            </li>
+            <li>
+              Peserta merupakan mahasiswa aktif D3, D4, atau S1 perguruan tingg
+              yang telah memenuhi syarat dan ketentuan untuk mengikuti acara
+              atau perlombaan yang diselenggarakan Find IT! 2023.
+            </li>
+            <li>Satu tim terdiri dari 2-3 orang.</li>
+            <li>
+              Berasal dari Institusi yang sama dan bukan merupakan panitia
+              FindIT! 2023.
+            </li>
+            <li>
+              Setiap tim tidak diperbolehkan untuk mengubah komposisi anggota
+              tim setelah melengkapi berkas pendaftaran.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <span>Benefit</span>
+          <ul>
+            <li>
+              E-Sertifikat bagi peserta yang lolos hingga babak semifinal dan final
+            </li>
+            <li>
+              Pengalaman
+            </li>
+            <li>Menambah Relasi dengan peserta lain</li>
+          </ul>
+        </div>
+        <div>
+          <span>Narahubung</span>
+          <ul>
+            <li>
+              Whatsapp: 081953524195 (Aurelia)
+            </li>
+            <li>
+              Instagram: @findit_ugm
+            </li>
+            <li>Email: competitions@find-it.id</li>
+          </ul>
+        </div>
+      </div>
+      <button class="regis-button">Daftar Sekarang</button>
     </main>
+    <footer class="footer-container">
+      <div class="main-container">
+        <div class="footer-line"></div>
+        <div class="footer-content">
+          <img alt="logo" src="../../Assets/logo.svg" class="logo" />
+          <div class="footer-icon">
+            <img alt="logo" src="../../Assets/Footer/dribble.svg" />
+            <img alt="logo" src="../../Assets/Footer/instagram.svg" />
+            <img alt="logo" src="../../Assets/Footer/linkedin.svg" />
+          </div>
+        </div>
+        <p class="copyright">&copy; 2023 LEADS. All Rights Reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
