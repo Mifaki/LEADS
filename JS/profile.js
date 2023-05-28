@@ -1,5 +1,11 @@
 let resizeTimer;
 
+const gear = document.getElementById("gear");
+
+gear.addEventListener("click", function() {
+  window.location.href = "../UserData/user-data.html";
+});
+
 function toggleExperienceSubtitle() {
   clearTimeout(resizeTimer);
   const experienceSubtitles = document.querySelectorAll(".experience-subtitle");

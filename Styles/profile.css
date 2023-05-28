@@ -18,6 +18,10 @@
   border-radius: 12px;
 }
 
+#gear {
+  cursor: pointer;
+}
+
 .profile-name,
 .statistics {
   display: flex;
