@@ -12,7 +12,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
   ) {
     document.getElementById("username").value = "";
     document.getElementById("password").value = "";
-    window.location.href = "../Home/home.html";
+    window.location.href = "../../Home/home.html";
   } else {
     alert("Invalid username/email or password. Please try again.");
   }
