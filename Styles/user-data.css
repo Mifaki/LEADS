@@ -71,6 +71,19 @@ span {
   border-radius: 10px;
 }
 
+.change-button {
+  background-color: #3093de;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 .input {
   position: relative;
 }
@@ -208,4 +221,39 @@ input[type="user_gender"] {
 
 .expandable-detail.expanded .arrow-icon {
   transform: rotate(180deg);
+}
+
+@media( width <= 904px ) {
+
+  .user-data-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .user-left,
+  .user-right {
+    width: 100%;
+  }
+}
+
+@media (width <= 434px) {
+  .banner {
+    max-height: 90px;
+    border-radius: 5px;
+  }
+
+  .change-photo > img {
+    aspect-ratio: 1;
+    width: 48px;
+    height: 48px;
+  }
+
+  .expandable-between {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .input_half {
+    width: 100%;
+  }
 }
