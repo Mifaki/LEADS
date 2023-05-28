@@ -2,7 +2,6 @@ document
   .getElementById("registration-form")
   .addEventListener("submit", function (event) {
     const usernameInput = document.getElementById("username");
-    const emailInput = document.getElementById("Email");
     const passwordInput = document.getElementById("password");
     const passwordConfirmationInput = document.getElementById(
       "passwordConfirmation"
