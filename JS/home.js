@@ -105,6 +105,9 @@ function displayEvents(events) {
   events.forEach((event) => {
     const eventCard = document.createElement("div");
     eventCard.className = "event-card";
+    eventCard.addEventListener("click", function() {
+      window.location.href = "../Detail/detail.html";
+    });
 
     const eventImage = document.createElement("img");
     eventImage.className = "event-image";
