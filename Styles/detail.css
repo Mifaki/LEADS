@@ -114,18 +114,43 @@ li {
 }
 
 .regis-button {
-    width: 100%;
-    height: 48px;
-    background-color: #3093de;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 32px;
-    cursor: pointer;
+  width: 100%;
+  height: 48px;
+  background-color: #3093de;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 32px;
+  cursor: pointer;
+}
+
+@media (width <= 904px) {
+  .detail-top-container {
+    flex-direction: column;
+    gap: 24px;
   }
+
+  .banner {
+    height: 200px;
+  }
+
+  .title-container {
+    width: 100%;
+  }
+
+  .deadline-container {
+    width: 100%;
+  }
+}
+
+@media (width <= 600px) {
+  .banner {
+    height: 130px;
+  }
+}
