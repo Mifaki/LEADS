@@ -59,7 +59,6 @@ body {
 
 .main-container {
   margin: 48px 156px 0 156px;
-  height: fit-content;
 }
 
 body::-webkit-scrollbar {

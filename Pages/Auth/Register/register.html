@@ -4,10 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../../Styles/global.css" />
+    <link rel="stylesheet" href="../../../Styles/register.css" />
+    <script defer src="../../../JS/register.js"></script>
+    <script defer src="../../../JS/toggle-password.js"></script>
   </head>
   <body>
-    <main class="main-container">
-      <p>p</p>
-    </main>
+    <div class="grid-container">
+      <main class="main-container">
+        <img class="logo" src="../../../Assets/logo-black.svg" alt="LOGO" loading="lazy" />
+        <form action="" method="post" id="registration-form">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              pattern="^[a-zA-Z0-9!#$%&amp;'*+\/=?^_`\{\|\}~.\-]+@[a-zA-Z0-9\-]+(\.[a-zA-Z0-9\-]+)*$"
+              required
+              title="must be a valid email address"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Kata Sandi</label>
+            <div class="input-with-icon">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                pattern="[a-zA-Z0-9]{8,}"
+                required
+                title="Must be at least 8 characters"
+              />
+              <img
+                src="../../../Assets/eye-solid.svg"
+                id="toggle-password"
+                alt="Eye"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="passwordConfirmation">Konfirmasi Kata Sandi</label>
+            <div class="input-with-icon">
+              <input
+                type="password"
+                id="passwordConfirmation"
+                name="passwordConfirmation"
+                pattern="[a-zA-Z0-9]{8,}"
+                required
+                title="Must be at least 8 characters"
+              />
+              <img
+                src="../../../Assets/eye-solid.svg"
+                id="toggle-password-confirmation"
+                alt="Eye"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <button type="submit">Masuk</button>
+        </form>
+
+        <a class="anchor-style" href="../Login/login.html">Sudah Punya Akun?</a>
+      </main>
+      <img
+        class="fit-image"
+        src="../../../Assets/Register/register-image.jpg"
+        alt="Login Image"
+        loading="lazy"
+      />
+    </div>
   </body>
 </html>
