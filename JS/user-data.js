@@ -239,9 +239,12 @@ function displayAwards(awards) {
 
     descDiv.appendChild(descActionText);
 
-    const descTextArea = document.createElement("text-are");
+    const descTextArea = document.createElement("textarea");
     descTextArea.classList.add("txt-area");
     descTextArea.textContent = award.desc;
+    descTextArea.oninput = function() {
+      adjustTextareaHeight(this);
+    };
 
     descDiv.appendChild(descTextArea);
     expandableDetail.appendChild(descDiv);
@@ -413,8 +416,11 @@ function newAwards() {
 
   descDiv.appendChild(descActionText);
 
-  const descTextArea = document.createElement("text-are");
+  const descTextArea = document.createElement("textarea");
   descTextArea.classList.add("txt-area");
+  descTextArea.oninput = function() {
+    adjustTextareaHeight(this);
+  };
 
   descDiv.appendChild(descTextArea);
   expandableDetail.appendChild(descDiv);
@@ -593,9 +599,12 @@ function displayHistorys(historys) {
 
     descDiv.appendChild(descActionText);
 
-    const descTextArea = document.createElement("text-are");
+    const descTextArea = document.createElement("textarea");
     descTextArea.classList.add("txt-area");
     descTextArea.textContent = history.desc;
+    descTextArea.oninput = function() {
+      adjustTextareaHeight(this);
+    };
 
     descDiv.appendChild(descTextArea);
     expandableDetail.appendChild(descDiv);
@@ -767,8 +776,11 @@ function newHistory() {
 
   descDiv.appendChild(descActionText);
 
-  const descTextArea = document.createElement("text-are");
+  const descTextArea = document.createElement("textarea");
   descTextArea.classList.add("txt-area");
+  descTextArea.oninput = function() {
+    adjustTextareaHeight(this);
+  };
 
   descDiv.appendChild(descTextArea);
   expandableDetail.appendChild(descDiv);
@@ -947,9 +959,12 @@ function displayAcademic(academics) {
 
     descDiv.appendChild(descActionText);
 
-    const descTextArea = document.createElement("text-are");
+    const descTextArea = document.createElement("textarea");
     descTextArea.classList.add("txt-area");
     descTextArea.textContent = academic.desc;
+    descTextArea.oninput = function() {
+      adjustTextareaHeight(this);
+    };
 
     descDiv.appendChild(descTextArea);
     expandableDetail.appendChild(descDiv);
@@ -1121,8 +1136,11 @@ function newAcademic() {
 
   descDiv.appendChild(descActionText);
 
-  const descTextArea = document.createElement("text-are");
+  const descTextArea = document.createElement("textarea");
   descTextArea.classList.add("txt-area");
+  descTextArea.oninput = function() {
+    adjustTextareaHeight(this);
+  };
 
   descDiv.appendChild(descTextArea);
   expandableDetail.appendChild(descDiv);
