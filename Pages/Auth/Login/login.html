@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../../Styles/global.css" />
     <link rel="stylesheet" href="../../../Styles/login.css" />
+    <script defer src="../../../JS/login.js"></script>
     <script defer src="../../../JS/toggle-password.js"></script>
   </head>
   <body>
@@ -19,7 +20,7 @@
               type="text"
               id="username"
               name="username"
-              pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}$|^[A-Za-z0-9._+-]+$"
+              pattern="^[a-zA-Z0-9!#$%&amp;'*+\/=?^_`\{\|\}~.\-]+@[a-zA-Z0-9\-]+(\.[a-zA-Z0-9\-]+)*$"
               required
               title="must be a valid email address"
             />
