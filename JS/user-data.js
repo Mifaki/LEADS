@@ -69,7 +69,7 @@ function adjustTextareaHeight(textarea) {
 }
 
 function displayAwards(awards) {
-  const awardsContainer = document.getElementById("awards");
+  const awardsContainer = document.getElementById("penghargaan");
 
   awards.forEach((award) => {
     const expandableDetail = document.createElement("div");
@@ -254,7 +254,7 @@ function displayAwards(awards) {
 }
 
 function newAwards() {
-  const awardsContainer = document.getElementById("awards");
+  const awardsContainer = document.getElementById("penghargaan");
 
   const expandableDetail = document.createElement("div");
   expandableDetail.classList.add("expandable-detail");
@@ -429,7 +429,7 @@ function newAwards() {
 }
 
 function displayHistorys(historys) {
-  const awardsContainer = document.getElementById("history");
+  const awardsContainer = document.getElementById("riwayat");
 
   historys.forEach((history) => {
     const expandableDetail = document.createElement("div");
@@ -614,7 +614,7 @@ function displayHistorys(historys) {
 }
 
 function newHistory() {
-  const awardsContainer = document.getElementById("history");
+  const awardsContainer = document.getElementById("riwayat");
 
   const expandableDetail = document.createElement("div");
   expandableDetail.classList.add("expandable-detail");
@@ -789,7 +789,7 @@ function newHistory() {
 }
 
 function displayAcademic(academics) {
-  const awardsContainer = document.getElementById("academic");
+  const awardsContainer = document.getElementById("akademik");
 
   academics.forEach((academic) => {
     const expandableDetail = document.createElement("div");
@@ -974,7 +974,7 @@ function displayAcademic(academics) {
 }
 
 function newAcademic() {
-  const awardsContainer = document.getElementById("academic");
+  const awardsContainer = document.getElementById("akademik");
 
   const expandableDetail = document.createElement("div");
   expandableDetail.classList.add("expandable-detail");
@@ -1149,6 +1149,18 @@ function newAcademic() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  const iconTextDivs = document.querySelectorAll(".icon-text");
+
+  iconTextDivs.forEach((div) => {
+    const span = div.querySelector("span");
+    const sectionId = span.textContent.toLowerCase().replace(/\s/g, "-");
+    const section = document.getElementById(sectionId);
+
+    div.addEventListener("click", function() {
+      section.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+  
   displayAwards(awards);
   displayHistorys(historys);
   displayAcademic(academics)
@@ -1158,7 +1170,7 @@ document.addEventListener("DOMContentLoaded", function () {
   moreAwards.textContent = "Tambah Penghargaan";
   moreAwards.addEventListener("click", newAwards);
 
-  const awardsContainer = document.getElementById("awards");
+  const awardsContainer = document.getElementById("penghargaan");
   awardsContainer.appendChild(moreAwards);
 
   const moreHistory = document.createElement("button");
@@ -1166,7 +1178,7 @@ document.addEventListener("DOMContentLoaded", function () {
   moreHistory.textContent = "Tambah Riwayat";
   moreHistory.addEventListener("click", newHistory);
 
-  const historyContainer = document.getElementById("history");
+  const historyContainer = document.getElementById("riwayat");
   historyContainer.appendChild(moreHistory);
 
   const moreAcademic = document.createElement("button");
@@ -1174,6 +1186,6 @@ document.addEventListener("DOMContentLoaded", function () {
   moreAcademic.textContent = "Tambah Akademik";
   moreAcademic.addEventListener("click", newAcademic);
 
-  const academicContainer = document.getElementById("academic");
+  const academicContainer = document.getElementById("akademik");
   academicContainer.appendChild(moreAcademic);
 });
