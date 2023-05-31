@@ -1,5 +1,10 @@
 let resizeTimer;
 
+document.getElementById("username").innerHTML = localStorage.getItem("username").split(" ")[0] ?? "Budi";
+document.getElementById("full-username").innerHTML = localStorage.getItem("username") ?? "Budi Setiawan";
+document.getElementById("email").innerHTML = localStorage.getItem("email") ?? "budistwn@gmail.com";
+
+
 const gear = document.getElementById("gear");
 
 gear.addEventListener("click", function() {
