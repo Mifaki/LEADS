@@ -73,6 +73,8 @@ const events = [
   },
 ];
 
+document.getElementById("username").innerHTML = localStorage.getItem("username").split(" ")[0] ?? "Budi";
+
 const eventContainer = document.getElementById("event-container");
 const searchInput = document.getElementById("search-input");
 const checkboxes = document.querySelectorAll(".checkbox");
