@@ -1,22 +1,26 @@
 document
   .getElementById("registration-form")
   .addEventListener("submit", function (event) {
-    const usernameInput = document.getElementById("username");
-    const passwordInput = document.getElementById("password");
-    const passwordConfirmationInput = document.getElementById(
-      "passwordConfirmation"
-    );
+    
+    const username = document.getElementById("username").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const passwordConfirmation = document.getElementById("passwordConfirmation");
 
-    if (passwordInput.value !== passwordConfirmationInput.value) {
-      passwordConfirmationInput.setCustomValidity(
+    if (password !== passwordConfirmation.value) {
+      passwordConfirmation.setCustomValidity(
         "Password and confirmation do not match"
       );
       event.preventDefault();
-    } else {
-      passwordConfirmationInput.setCustomValidity("");
-      localStorage.setItem("username", usernameInput.value);
-      localStorage.setItem("password", passwordInput.value);
-      event.preventDefault();
-      window.location.href = "../Login/login.html";
+      return;
     }
+
+    passwordConfirmation.setCustomValidity("");
+
+    localStorage.setItem("username", username);
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+
+    event.preventDefault();
+    window.location.href = "../Login/login.html";
   });
