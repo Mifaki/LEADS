@@ -22,5 +22,5 @@ document
     localStorage.setItem("password", password);
 
     event.preventDefault();
-    window.location.href = "../Login/login.html";
+    window.location.href = "index.html";
   });

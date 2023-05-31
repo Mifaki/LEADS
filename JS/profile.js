@@ -8,7 +8,7 @@ document.getElementById("email").innerHTML = localStorage.getItem("email") ?? "b
 const gear = document.getElementById("gear");
 
 gear.addEventListener("click", function() {
-  window.location.href = "../UserData/user-data.html";
+  window.location.href = "user-data.html";
 });
 
 function toggleExperienceSubtitle() {
