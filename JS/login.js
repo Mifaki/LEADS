@@ -18,5 +18,5 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
   document.getElementById("identifier").value = "";
   document.getElementById("password").value = "";
-  window.location.href = "../../Home/home.html";
+  window.location.href = "home.html";
 });

@@ -79,7 +79,7 @@ function displayAwards(awards) {
     expandableIcon.classList.add("expandable-icon");
 
     const deleteIcon = document.createElement("img");
-    deleteIcon.src = "../../Assets/UserData/delete.svg";
+    deleteIcon.src = "Assets/UserData/delete.svg";
     deleteIcon.alt = "delete icon";
     deleteIcon.classList.add("delete-icon");
     deleteIcon.addEventListener("click", function () {
@@ -87,7 +87,7 @@ function displayAwards(awards) {
     });
 
     const arrowIcon = document.createElement("img");
-    arrowIcon.src = "../../Assets/UserData/arrow.svg";
+    arrowIcon.src = "Assets/UserData/arrow.svg";
     arrowIcon.alt = "arrow icon";
     arrowIcon.classList.add("arrow-icon");
     arrowIcon.addEventListener("click", function () {
@@ -263,7 +263,7 @@ function newAwards() {
   expandableIcon.classList.add("expandable-icon");
 
   const deleteIcon = document.createElement("img");
-  deleteIcon.src = "../../Assets/UserData/delete.svg";
+  deleteIcon.src = "Assets/UserData/delete.svg";
   deleteIcon.alt = "delete icon";
   deleteIcon.classList.add("delete-icon");
   deleteIcon.addEventListener("click", function () {
@@ -271,7 +271,7 @@ function newAwards() {
   });
 
   const arrowIcon = document.createElement("img");
-  arrowIcon.src = "../../Assets/UserData/arrow.svg";
+  arrowIcon.src = "Assets/UserData/arrow.svg";
   arrowIcon.alt = "arrow icon";
   arrowIcon.classList.add("arrow-icon");
   arrowIcon.addEventListener("click", function () {
@@ -439,7 +439,7 @@ function displayHistorys(historys) {
     expandableIcon.classList.add("expandable-icon");
 
     const deleteIcon = document.createElement("img");
-    deleteIcon.src = "../../Assets/UserData/delete.svg";
+    deleteIcon.src = "Assets/UserData/delete.svg";
     deleteIcon.alt = "delete icon";
     deleteIcon.classList.add("delete-icon");
     deleteIcon.addEventListener("click", function () {
@@ -447,7 +447,7 @@ function displayHistorys(historys) {
     });
 
     const arrowIcon = document.createElement("img");
-    arrowIcon.src = "../../Assets/UserData/arrow.svg";
+    arrowIcon.src = "Assets/UserData/arrow.svg";
     arrowIcon.alt = "arrow icon";
     arrowIcon.classList.add("arrow-icon");
     arrowIcon.addEventListener("click", function () {
@@ -623,7 +623,7 @@ function newHistory() {
   expandableIcon.classList.add("expandable-icon");
 
   const deleteIcon = document.createElement("img");
-  deleteIcon.src = "../../Assets/UserData/delete.svg";
+  deleteIcon.src = "Assets/UserData/delete.svg";
   deleteIcon.alt = "delete icon";
   deleteIcon.classList.add("delete-icon");
   deleteIcon.addEventListener("click", function () {
@@ -631,7 +631,7 @@ function newHistory() {
   });
 
   const arrowIcon = document.createElement("img");
-  arrowIcon.src = "../../Assets/UserData/arrow.svg";
+  arrowIcon.src = "Assets/UserData/arrow.svg";
   arrowIcon.alt = "arrow icon";
   arrowIcon.classList.add("arrow-icon");
   arrowIcon.addEventListener("click", function () {
@@ -799,7 +799,7 @@ function displayAcademic(academics) {
     expandableIcon.classList.add("expandable-icon");
 
     const deleteIcon = document.createElement("img");
-    deleteIcon.src = "../../Assets/UserData/delete.svg";
+    deleteIcon.src = "Assets/UserData/delete.svg";
     deleteIcon.alt = "delete icon";
     deleteIcon.classList.add("delete-icon");
     deleteIcon.addEventListener("click", function () {
@@ -807,7 +807,7 @@ function displayAcademic(academics) {
     });
 
     const arrowIcon = document.createElement("img");
-    arrowIcon.src = "../../Assets/UserData/arrow.svg";
+    arrowIcon.src = "Assets/UserData/arrow.svg";
     arrowIcon.alt = "arrow icon";
     arrowIcon.classList.add("arrow-icon");
     arrowIcon.addEventListener("click", function () {
@@ -983,7 +983,7 @@ function newAcademic() {
   expandableIcon.classList.add("expandable-icon");
 
   const deleteIcon = document.createElement("img");
-  deleteIcon.src = "../../Assets/UserData/delete.svg";
+  deleteIcon.src = "Assets/UserData/delete.svg";
   deleteIcon.alt = "delete icon";
   deleteIcon.classList.add("delete-icon");
   deleteIcon.addEventListener("click", function () {
@@ -991,7 +991,7 @@ function newAcademic() {
   });
 
   const arrowIcon = document.createElement("img");
-  arrowIcon.src = "../../Assets/UserData/arrow.svg";
+  arrowIcon.src = "Assets/UserData/arrow.svg";
   arrowIcon.alt = "arrow icon";
   arrowIcon.classList.add("arrow-icon");
   arrowIcon.addEventListener("click", function () {

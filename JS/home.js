@@ -1,73 +1,73 @@
 const events = [
   {
     id: "1",
-    img: "../../Assets/Home/event-1.png",
+    img: "Assets/Home/event-1.png",
     tags: ["Lomba", "Mahasiswa", "Nasional"],
     title: "UI/UX Design Find It",
   },
   {
     id: "2",
-    img: "../../Assets/Home/event-2.png",
+    img: "Assets/Home/event-2.png",
     tags: ["Lomba", "SMA/SMK", "Mahasiswa", "Nasional"],
     title: "Hackathon Find It",
   },
   {
     id: "3",
-    img: "../../Assets/Home/event-3.png",
+    img: "Assets/Home/event-3.png",
     tags: ["Beasiswa", "SD", "Internasional"],
     title: "Scholarship for Elementary Students",
   },
   {
     id: "4",
-    img: "../../Assets/Home/event-4.png",
+    img: "Assets/Home/event-4.png",
     tags: ["Event", "SMP", "SMA/SMK", "Nasional"],
     title: "Science Fair Bahasa",
   },
   {
     id: "5",
-    img: "../../Assets/Home/event-5.png",
+    img: "Assets/Home/event-5.png",
     tags: ["Lomba", "Event", "SMA/SMK", "Mahasiswa", "Internasional"],
     title: "Math Olympiad English",
   },
   {
     id: "6",
-    img: "../../Assets/Home/event-6.png",
+    img: "Assets/Home/event-6.png",
     tags: ["Beasiswa", "Mahasiswa", "Nasional"],
     title: "Scholarship for College Students",
   },
   {
     id: "7",
-    img: "../../Assets/Home/event-7.png",
+    img: "Assets/Home/event-7.png",
     tags: ["Lomba", "Umum", "Provinsi"],
     title: "Photography Contest",
   },
   {
     id: "8",
-    img: "../../Assets/Home/event-3.png",
+    img: "Assets/Home/event-3.png",
     tags: ["Beasiswa", "SD", "Nasional"],
     title: "National Scholarship for Elementary Students",
   },
   {
     id: "9",
-    img: "../../Assets/Home/event-9.png",
+    img: "Assets/Home/event-9.png",
     tags: ["Event", "SMA/SMK", "Mahasiwa", "Internasional"],
     title: "Art Exhibition English",
   },
   {
     id: "10",
-    img: "../../Assets/Home/event-10.png",
+    img: "Assets/Home/event-10.png",
     tags: ["Lomba", "SMP", "SMA/SMK", "Mahasiswa", "Provinsi"],
     title: "Coding Competition",
   },
   {
     id: "11",
-    img: "../../Assets/Home/event-11.png",
+    img: "Assets/Home/event-11.png",
     tags: ["Event", "Mahasiswa", "Internasional"],
     title: "Science Fair at Harvard University",
   },
   {
     id: "12",
-    img: "../../Assets/Home/event-12.png",
+    img: "Assets/Home/event-12.png",
     tags: ["Lomba", "SMA/SMK", "Mahasiswa", "Umum", "Nasional"],
     title: "Programming Contest Indonesia",
   },
@@ -108,7 +108,7 @@ function displayEvents(events) {
     const eventCard = document.createElement("div");
     eventCard.className = "event-card";
     eventCard.addEventListener("click", function() {
-      window.location.href = "../Detail/detail.html";
+      window.location.href = "detail.html";
     });
 
     const eventImage = document.createElement("img");
