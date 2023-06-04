@@ -1,4 +1,5 @@
-![Thumbnail](https://github.com/Mifaki/LEADS/assets/107536877/a6a34f2a-aa46-4a1a-9645-1941547be1ff)
+![Thumbnail](https://github.com/Mifaki/LEADS/assets/107536877/b0921c9d-ab88-4da2-a8fa-1d584a8b7f77)
+
 
 # LEADS
 `Final Project for the Basic User Interface Course`
@@ -11,7 +12,7 @@ The project is a website designed for a fictional startup that aims to develop t
 
 #### Sitemap
 
-![Competitor Analytics](https://github.com/Mifaki/LEADS/assets/107536877/77be83f3-a5a0-4af9-bfc2-a109ce66acf2)
+![Competitor Analytics](https://github.com/Mifaki/LEADS/assets/107536877/86a87cf7-82e4-472c-9872-b40ed9d2be80)
 
 ## HI-FI
 
