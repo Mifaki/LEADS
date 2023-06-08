@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="Styles/global.css" />
     <link rel="stylesheet" href="Styles/header-footer.css" />
     <link rel="stylesheet" href="Styles/landing.css" />
-    <script defer src="JS/firefox-bugfix.js"></script>
+    <script src="JS/firefox-bugfix.js"></script>
+    <script src="JS/landing.js"></script>
   </head>
   <body>
     <header class="main-container header-container">
@@ -45,12 +46,7 @@
             Temukan Lomba, Event Akademik, dan Beasiswa yang Tepat dengan Mudah dan Menyenangkan!
           </p>
           <div class="button-landing-container">
-            <button onclick="location.href='register.html';" class="register-button-landing col-3">
-              Daftar
-            </button>
-            <button onclick="location.href='index.html';" class="login-button-landing col-3">
-              Masuk
-            </button>
+            <button onclick="checkPassword()" class="register-button-landing col-3">Mulai Sekarang</button>
           </div>
         </div>
       </div>
@@ -152,7 +148,7 @@
         <p style="font-weight: bold; margin-bottom: 8px">
           Tunggu apalagi ayo mulai perjuanganmu dengan LEADS
         </p>
-        <button onclick="location.href='index.html';" class="register-button-landing">
+        <button onclick="checkPassword()" class="register-button-landing-bottom">
           Mulai Sekarang
         </button>
       </div>
