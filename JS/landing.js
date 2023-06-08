@@ -3,6 +3,6 @@ function checkPassword() {
   if (password !== null && password !== undefined) {
     window.location.href = "home.html";
   } else {
-    window.location.href = "index.html";
+    window.location.href = "login.html";
   }
 }
