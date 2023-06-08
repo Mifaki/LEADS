@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="Styles/global.css" />
     <link rel="stylesheet" href="Styles/header-footer.css" />
     <link rel="stylesheet" href="Styles/home.css" />
+    <link rel="stylesheet" href="Styles/lazy-load.css" />
+    <script defer src="JS/firefox-bugfix.js"></script>
     <script src="JS/login-verification.js"></script>
-    <script src="JS/firefox-bugfix.js"></script>
     <script defer src="JS/header-footer.js"></script>
     <script defer src="JS/home.js"></script>
+    <script defer src="JS/lazy-load.js"></script>
   </head>
   <body>
     <header class="main-container header-container">
@@ -31,21 +33,20 @@
         </div>
         <a href="profile.html" class="user-mobile">Profile</a>
         <div class="user-header-container" id="profile-link">
-          <img alt="photo profile" src="Assets/Profile/photo-profile.png" class="user-image">
+          <img alt="photo profile" src="Assets/Profile/photo-profile.png" class="user-image" />
           <p class="user-name" id="username"></p>
         </div>
-        <label for="check" class="close-menu"
-          ><i class="fas fa-times"></i
-        ></label>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
       </div>
       <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
     </header>
     <main>
-      <img
-        alt="header-image"
-        src="Assets/Home/header-image.png"
-        class="header-image"
-      />
+      <div
+        class="blurred-img"
+        style="background-image: url('Assets/Reduced/Home/header-image.jpg')"
+      >
+        <img alt="header-image" src="Assets/Home/header-image.png" class="header-image" />
+      </div>
       <div class="main-container">
         <div class="home-content">
           <div class="left-content">

@@ -115,6 +115,7 @@ function displayEvents(events) {
     eventImage.className = "event-image";
     eventImage.src = event.img;
     eventImage.alt = "event-image";
+    eventImage.loading = "lazy";
 
     const tagsContainer = document.createElement("div");
     tagsContainer.className = "tags";

@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="Styles/global.css" />
     <link rel="stylesheet" href="Styles/header-footer.css" />
     <link rel="stylesheet" href="Styles/detail.css" />
-    <script src="JS/firefox-bugfix.js"></script>
+    <link rel="stylesheet" href="Styles/lazy-load.css" />
+    <script defer src="JS/firefox-bugfix.js"></script>
     <script src="JS/login-verification.js"></script>
     <script defer src="JS/detail.js"></script>
     <script defer src="JS/header-footer.js"></script>
+    <script defer src="JS/lazy-load.js"></script>
   </head>
   <body>
     <header class="main-container header-container">
@@ -31,21 +33,17 @@
         </div>
         <a href="profile.html" class="user-mobile">Profile</a>
         <div class="user-header-container" id="profile-link">
-          <img
-            alt="photo profile"
-            src="Assets/Profile/photo-profile.png"
-            class="user-image"
-          />
+          <img alt="photo profile" src="Assets/Profile/photo-profile.png" class="user-image" />
           <p class="user-name">Budi</p>
         </div>
-        <label for="check" class="close-menu"
-          ><i class="fas fa-times"></i
-        ></label>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
       </div>
       <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
     </header>
     <main class="main-container">
-      <img alt="banner" src="Assets/Detail/banner.jpg" class="banner" />
+      <div class="blurred-img" style="background-image: url('Assets/Reduced/Detail/banner.jpg')">
+        <img alt="banner" src="Assets/Detail/banner.jpg" class="banner" />
+      </div>
       <div class="detail-top-container">
         <div class="title-container">
           <div class="tags">
@@ -58,10 +56,7 @@
           <h1>Ui/Ux Design Find It</h1>
           <div class="statistics-container">
             <div>
-              <img
-                alt="participants"
-                src="Assets/Detail/participants.svg"
-              />
+              <img alt="participants" src="Assets/Detail/participants.svg" />
               <p>Participated by 80 team</p>
             </div>
             <div>
@@ -84,16 +79,14 @@
       <div class="about">
         <span>Tentang</span>
         <p style="text-align: justify">
-          FIND IT atau kependekan dari Future Innovation and Discovery
-          Information and Technology, merupakan sebuah acara/event tahunan yang
-          diselenggarakan oleh DTETI FT UGM dimana pada event ini terdapat
-          beberapa acara diantaranya workshop dengan nama IT Academy, pameran
-          dengan nama IT Fest, dan lomba-lomba seperti Competitive Programming,
-          Data Analytics Competition, Hackathon, Capture the Flag, dan E-sport.
-          Event ini bertujuan untuk mengembangkan dan memberi wadah bagi
-          masyarakat yang tertarik ke dunia TI serta menarik minat sekaligus
-          memperkenalkan TI ke masyarakat luas; apalagi di tengah era revolusi
-          5.0 dimana teknologi berkembang sangat pesat.
+          FIND IT atau kependekan dari Future Innovation and Discovery Information and Technology,
+          merupakan sebuah acara/event tahunan yang diselenggarakan oleh DTETI FT UGM dimana pada
+          event ini terdapat beberapa acara diantaranya workshop dengan nama IT Academy, pameran
+          dengan nama IT Fest, dan lomba-lomba seperti Competitive Programming, Data Analytics
+          Competition, Hackathon, Capture the Flag, dan E-sport. Event ini bertujuan untuk
+          mengembangkan dan memberi wadah bagi masyarakat yang tertarik ke dunia TI serta menarik
+          minat sekaligus memperkenalkan TI ke masyarakat luas; apalagi di tengah era revolusi 5.0
+          dimana teknologi berkembang sangat pesat.
         </p>
       </div>
       <div class="details">
@@ -101,33 +94,26 @@
           <span>Syarat dan Ketentuan</span>
           <ul>
             <li>
-              Seluruh peserta wajib mematuhi ketentuan-ketentuan yang berlaku
-              selama Find IT! 2023, baik ketentuan umum maupun ketentuan setiap
-              acara atau perlombaan.
+              Seluruh peserta wajib mematuhi ketentuan-ketentuan yang berlaku selama Find IT! 2023,
+              baik ketentuan umum maupun ketentuan setiap acara atau perlombaan.
             </li>
             <li>
-              Peserta merupakan mahasiswa aktif D3, D4, atau S1 perguruan tingg
-              yang telah memenuhi syarat dan ketentuan untuk mengikuti acara
-              atau perlombaan yang diselenggarakan Find IT! 2023.
+              Peserta merupakan mahasiswa aktif D3, D4, atau S1 perguruan tingg yang telah memenuhi
+              syarat dan ketentuan untuk mengikuti acara atau perlombaan yang diselenggarakan Find
+              IT! 2023.
             </li>
             <li>Satu tim terdiri dari 2-3 orang.</li>
+            <li>Berasal dari Institusi yang sama dan bukan merupakan panitia FindIT! 2023.</li>
             <li>
-              Berasal dari Institusi yang sama dan bukan merupakan panitia
-              FindIT! 2023.
-            </li>
-            <li>
-              Setiap tim tidak diperbolehkan untuk mengubah komposisi anggota
-              tim setelah melengkapi berkas pendaftaran.
+              Setiap tim tidak diperbolehkan untuk mengubah komposisi anggota tim setelah melengkapi
+              berkas pendaftaran.
             </li>
           </ul>
         </div>
         <div>
           <span>Benefit</span>
           <ul>
-            <li>
-              E-Sertifikat bagi peserta yang lolos hingga babak semifinal dan
-              final
-            </li>
+            <li>E-Sertifikat bagi peserta yang lolos hingga babak semifinal dan final</li>
             <li>Pengalaman</li>
             <li>Menambah Relasi dengan peserta lain</li>
           </ul>
