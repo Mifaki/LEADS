@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/global.css" />
+    <link rel="stylesheet" href="Styles/login.css" />
+    <link rel="stylesheet" href="Styles/lazy-load.css" />
+    <script defer src="JS/firefox-bugfix.js"></script>
+    <script defer src="JS/login.js"></script>
+    <script defer src="JS/toggle-password.js"></script>
+    <script defer src="JS/lazy-load.js"></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <main class="main-container">
+        <img class="logo" src="Assets/logo-black.svg" alt="LOGO" loading="lazy" />
+
+        <form action="" method="post" id="login-form">
+          <div class="form-group">
+            <label for="identifier">Username atau Email</label>
+            <input
+              type="text"
+              id="identifier"
+              name="identifier"
+              pattern="^(?!.*\.\.)(?!.*\.$)[\w\s.]{1,30}$|^[\w.+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
+              required
+              title="must be a valid email address"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Kata Sandi</label>
+            <div class="input-with-icon">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                pattern="[a-zA-Z0-9]{8,}"
+                required
+                title="Must be at least 8 characters"
+              />
+              <img src="Assets/eye-solid.svg" id="toggle-password" alt="Eye" loading="lazy" />
+            </div>
+          </div>
+          <button type="submit">Masuk</button>
+        </form>
+
+        <a class="anchor-style" href="register.html">Belum punya akun?</a>
+      </main>
+
+      <div
+        class="blurred-img"
+        style="background-image: url('Assets/Reduced/Login/login-image.jpg')"
+      >
+        <img class="fit-image" src="Assets/login-image.png" alt="Login Image" loading="lazy" />
+      </div>
+    </div>
+  </body>
+</html>

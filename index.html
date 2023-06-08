@@ -3,58 +3,169 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="Styles/global.css" />
-    <link rel="stylesheet" href="Styles/login.css" />
-    <link rel="stylesheet" href="Styles/lazy-load.css" />
-    <script defer src="JS/firefox-bugfix.js"></script>
-    <script defer src="JS/login.js"></script>
-    <script defer src="JS/toggle-password.js"></script>
-    <script defer src="JS/lazy-load.js"></script>
+    <link rel="stylesheet" href="Styles/header-footer.css" />
+    <link rel="stylesheet" href="Styles/landing.css" />
+    <script src="JS/firefox-bugfix.js"></script>
+    <script src="JS/landing.js"></script>
   </head>
   <body>
-    <div class="grid-container">
-      <main class="main-container">
-        <img class="logo" src="Assets/logo-black.svg" alt="LOGO" loading="lazy" />
-
-        <form action="" method="post">
-          <div class="form-group">
-            <label for="identifier">Username atau Email</label>
-            <input
-              type="text"
-              id="identifier"
-              name="identifier"
-              pattern="^(?!.*\.\.)(?!.*\.$)[\w\s.]{1,30}$|^[\w.+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
-              required
-              title="must be a valid email address"
-            />
+    <header class="main-container header-container">
+      <img alt="logo" src="Assets/logo-black.svg" class="logo" />
+      <input type="checkbox" id="check" />
+      <div class="menu">
+        <div class="nav">
+          <a href="home.html">Home</a>
+          <a href="index.html">About Us</a>
+          <a href="#">History</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="button-header-container">
+          <button onclick="location.href='register.html';" class="register-button">Daftar</button>
+          <button onclick="location.href='login.html';" class="login-button">Masuk</button>
+        </div>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      </div>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </header>
+    <main>
+      <div class="headline-landing">
+        <div>
+          <p class="headline-caps">
+            TEMUKAN PELUANG TERBAIK UNTUK MENGEMBANGKAN KEMAMPUANMU DENGAN MUDAH DI
+            <span>LEADS</span>
+          </p>
+          <p class="headline-text">
+            Temukan Lomba, Event Akademik, dan Beasiswa yang Tepat dengan Mudah dan Menyenangkan!
+          </p>
+          <div class="button-landing-container">
+            <button onclick="checkPassword()" class="register-button-landing col-3">Mulai Sekarang</button>
           </div>
-
-          <div class="form-group">
-            <label for="password">Kata Sandi</label>
-            <div class="input-with-icon">
-              <input
-                type="password"
-                id="password"
-                name="password"
-                pattern="[a-zA-Z0-9]{8,}"
-                required
-                title="Must be at least 8 characters"
-              />
-              <img src="Assets/eye-solid.svg" id="toggle-password" alt="Eye" loading="lazy" />
+        </div>
+      </div>
+      <div class="main-container">
+        <section id="goals">
+          <p>Tujuan Kami</p>
+          <div class="goals-container">
+            <div class="goal-card">
+              <img alt="goals-image" src="Assets/Landing/card-1.svg" class="goal-image" />
+              <p class="goal-title">Membantu Mengembangkan Potensi</p>
+              <p>
+                membantu para pelajar, mahasiswa dan masyarakat umum dalam mengembangkan
+                keterampilan dan mencapai kesuksesan akademik maupun non-akademik
+              </p>
+            </div>
+            <div class="goal-card">
+              <img alt="goals-image" src="Assets/Landing/card-2.svg" class="goal-image" />
+              <p class="goal-title">Memberikan Informasi</p>
+              <p>
+                mempermudah para pelajar, mahasiswa, dan masyarakat umum dalam mencari informasi
+                yang menunjang dalam karir akademiknya seperti lomba, event akademik, dan program
+                beasiswa.
+              </p>
             </div>
           </div>
-          <button type="submit">Masuk</button>
-        </form>
-
-        <a class="anchor-style" href="register.html">Belum punya akun?</a>
-      </main>
-
-      <div
-        class="blurred-img"
-        style="background-image: url('Assets/Reduced/Login/login-image.jpg')"
-      >
-        <img class="fit-image" src="Assets/login-image.png" alt="Login Image" loading="lazy" />
+        </section>
+        <section id="feature">
+          <div class="feature-container">
+            <p class="feature-title">Fitur Unggulan</p>
+            <p class="feature-subtitle">
+              Nikmati berbagai keuntungan saat menggunakan layanan kami
+            </p>
+            <div class="feature-content-container">
+              <div class="feature-card">
+                <img alt="feature-icon" src="Assets/Landing/feature-1.svg" />
+                <p class="feature-card-title">Mencari dan Mengikuti Lomba, Event, dan Beasiswa</p>
+                <p>
+                  Tenemukanlah kegiatan yang sesuai dengan kategori, jenjang, tingkat, waktu dan
+                  lokasi penyelenggaraan dengan cepat dan mudah.
+                </p>
+              </div>
+              <div class="feature-card">
+                <img alt="feature-icon" src="Assets/Landing/feature-2.svg" />
+                <p class="feature-card-title">Koneksi</p>
+                <p>
+                  Memberikan kesempatan untuk berinteraksi dengan sesama peserta dan panitia
+                  penyelenggara kegiatan untuk membangun relasi dan mendapatkan informasi tambahan
+                  tentang kegiatan.
+                </p>
+              </div>
+              <div class="feature-card">
+                <img alt="feature-icon" src="Assets/Landing/feature-3.svg" />
+                <p class="feature-card-title">Reminder</p>
+                <p>
+                  Membantu kalian agar tidak melewatkan kesempatan untuk mengikuti kegiatan yang
+                  diinginkan.
+                </p>
+              </div>
+              <div class="feature-card">
+                <img alt="feature-icon" src="Assets/Landing/feature-4.svg" />
+                <p class="feature-card-title">Portofolio</p>
+                <p>
+                  Setiap kegiatan yang diikuti pada akan terekam dan dapat digunakan sebagai
+                  Portofolio
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
+      <section id="reviews">
+        <div class="main-container reviews-container">
+          <div class="review">
+            <img alt="stars" src="Assets/Landing/stars.svg" />
+            <p style="font-weight: bold">
+              “Saya sangat senang menemukan platform LEADS ini karena sangat memudahkan saya untuk
+              mencari informasi lomba dan event akademik yang ada. Selain itu, saya juga dapat
+              menemukan informasi beasiswa yang sangat bermanfaat bagi saya sebagai mahasiswa aktif.
+              Fitur-fitur yang disediakan oleh LEADS sangat lengkap dan mudah digunakan.”
+              <br /><br />-Jane, Mahsiwa Aktif
+            </p>
+            <img alt="stars" src="Assets/Landing/quote.png" />
+          </div>
+          <div class="review">
+            <img alt="stars" src="Assets/Landing/stars.svg" />
+            <p style="font-weight: bold">
+              “LEADS sangat membantu saya dalam mempromosikan lomba dan event akademik yang saya
+              selenggarakan. Platform ini memiliki banyak audience dari kalangan pelajar dan
+              mahasiswa aktif, sehingga dapat memperluas jangkauan promosi saya. Saya juga sangat
+              terbantu dengan fitur reminder yang dapat mengingatkan peserta untuk mendaftar pada
+              kegiatan yang saya selenggarakan.”
+              <br /><br />-Budi, Penyelenggara Lomba
+            </p>
+            <img alt="stars" src="Assets/Landing/quote.png" />
+          </div>
+        </div>
+      </section>
+      <div class="main-container">
+        <p style="font-weight: bold; margin-bottom: 8px">
+          Tunggu apalagi ayo mulai perjuanganmu dengan LEADS
+        </p>
+        <button onclick="checkPassword()" class="register-button-landing-bottom">
+          Mulai Sekarang
+        </button>
+      </div>
+    </main>
+    <footer class="footer-container">
+      <div class="main-container">
+        <div class="footer-line"></div>
+        <div class="footer-content">
+          <img alt="logo" src="Assets/logo.svg" class="logo" />
+          <div class="footer-icon">
+            <img alt="logo" src="Assets/Footer/dribble.svg" />
+            <img alt="logo" src="Assets/Footer/instagram.svg" />
+            <img alt="logo" src="Assets/Footer/linkedin.svg" />
+          </div>
+        </div>
+        <p class="copyright">&copy; 2023 LEADS. All Rights Reserved</p>
+      </div>
+    </footer>
   </body>
 </html>

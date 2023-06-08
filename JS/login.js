@@ -1,4 +1,4 @@
-document.querySelector("form").addEventListener("submit", function (event) {
+document.getElementById("login-form").addEventListener("submit", function (event) {
   event.preventDefault();
 
   const identifier = document.getElementById("identifier").value;
