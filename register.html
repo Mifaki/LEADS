@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Styles/global.css" />
     <link rel="stylesheet" href="Styles/register.css" />
-    <script src="JS/firefox-bugfix.js"></script>
+    <link rel="stylesheet" href="Styles/lazy-load.css" />
+    <script defer src="JS/firefox-bugfix.js"></script>
     <script defer src="JS/register.js"></script>
     <script defer src="JS/toggle-password.js"></script>
+    <script defer src="JS/lazy-load.js"></script>
   </head>
   <body>
     <div class="grid-container">
@@ -16,12 +18,7 @@
         <form action="" method="post" id="registration-form">
           <div class="form-group">
             <label for="username">Username</label>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              required
-            />
+            <input type="text" id="username" name="username" required />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
@@ -45,12 +42,7 @@
                 required
                 title="Must be at least 8 characters"
               />
-              <img
-                src="Assets/eye-solid.svg"
-                id="toggle-password"
-                alt="Eye"
-                loading="lazy"
-              />
+              <img src="Assets/eye-solid.svg" id="toggle-password" alt="Eye" loading="lazy" />
             </div>
           </div>
           <div class="form-group">
@@ -77,12 +69,14 @@
 
         <a class="anchor-style" href="index.html">Sudah Punya Akun?</a>
       </main>
-      <img
-        class="fit-image"
-        src="Assets/Register/register-image.jpg"
-        alt="Login Image"
-        loading="lazy"
-      />
+      <div class="blurred-img" style="background-image: url('Assets/Reduced/Register/register-image.jpg')">
+        <img
+          class="fit-image"
+          src="Assets/Register/register-image.jpg"
+          alt="Login Image"
+          loading="lazy"
+        />
+      </div>
     </div>
   </body>
 </html>

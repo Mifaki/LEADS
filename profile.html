@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="Styles/global.css" />
     <link rel="stylesheet" href="Styles/header-footer.css" />
     <link rel="stylesheet" href="Styles/profile.css" />
+    <link rel="stylesheet" href="Styles/lazy-load.css">
     <script src="JS/firefox-bugfix.js"></script>
     <script defer src="JS/header-footer.js"></script>
     <script defer src="JS/profile.js"></script>
+    <script defer src="JS/lazy-load.js"></script>
   </head>
   <body>
     <header class="main-container header-container">
@@ -30,35 +32,24 @@
         </div>
         <a href="profile.html" class="user-mobile">Profile</a>
         <div class="user-header-container" id="profile-link">
-          <img alt="photo profile" src="Assets/Profile/photo-profile.png" class="user-image">
+          <img alt="photo profile" src="Assets/Profile/photo-profile.png" class="user-image" />
           <p class="user-name" id="username">Budi</p>
         </div>
-        <label for="check" class="close-menu"
-          ><i class="fas fa-times"></i
-        ></label>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
       </div>
       <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
     </header>
     <main class="main-container">
       <div class="profile-container">
-        <img
-          alt="user banner"
-          src="Assets/Profile/profile-banner.png"
-          class="profile-banner"
-        />
+        <div class="blurred-img" style="background-image: url('Assets/Reduced/Profile/profile-banner.jpg')">
+          <img alt="user banner" src="Assets/Profile/profile-banner.png" class="profile-banner" />
+        </div>
         <div class="profile-top">
           <div class="profile-name">
-            <img
-              alt="photo profile"
-              src="Assets/Profile/photo-profile.png"
-              class="photo-profile"
-            />
+            <img alt="photo profile" src="Assets/Profile/photo-profile.png" class="photo-profile" />
             <div class="destkop-name">
               <p id="full-username" style="font-size: 24px; font-weight: bold">Budi Setiawan</p>
-              <p>
-                Undergraduate Information Technology Student at University of
-                Brawijaya
-              </p>
+              <p>Undergraduate Information Technology Student at University of Brawijaya</p>
             </div>
           </div>
           <i class="fa-solid fa-gear" id="gear"></i>
@@ -66,8 +57,7 @@
         <div class="mobile-name">
           <p style="font-weight: bold">Budi Setiawan</p>
           <p style="font-size: bold">
-            Undergraduate Information Technology Student at University of
-            Brawijaya
+            Undergraduate Information Technology Student at University of Brawijaya
           </p>
         </div>
         <div class="statistics">
@@ -80,88 +70,64 @@
             <div class="profile-border">
               <p style="font-weight: bold">About Me</p>
               <p>
-                Saya adalah seorang mahasiswa yang memiliki ambisi besar untuk
-                menjadi seorang Full Stack Designer. Saya percaya bahwa
-                kombinasi antara keterampilan desain dan pemrograman akan
-                membantu saya menciptakan pengalaman pengguna yang luar biasa
-                dan memberikan dampak positif dalam dunia teknologi. Saya
-                berdedikasi untuk terus belajar dan meningkatkan kemampuan saya
-                agar dapat mencapai impian menjadi seorang Full Stack Designer.
+                Saya adalah seorang mahasiswa yang memiliki ambisi besar untuk menjadi seorang Full
+                Stack Designer. Saya percaya bahwa kombinasi antara keterampilan desain dan
+                pemrograman akan membantu saya menciptakan pengalaman pengguna yang luar biasa dan
+                memberikan dampak positif dalam dunia teknologi. Saya berdedikasi untuk terus
+                belajar dan meningkatkan kemampuan saya agar dapat mencapai impian menjadi seorang
+                Full Stack Designer.
               </p>
             </div>
             <div class="divider"></div>
             <div class="experience-container">
               <span>Penghargaan</span>
               <div class="profile-experience">
-                <img
-                  alt="award image"
-                  src="Assets/Profile/gemastik.png"
-                  class="experience-image"
-                />
+                <img alt="award image" src="Assets/Profile/gemastik.png" class="experience-image" />
                 <div class="experience-container">
                   <div>
-                    <span
-                      >Juara 1 Gemastik Kategori Design Antarmuka Pengguna</span
-                    >
+                    <span>Juara 1 Gemastik Kategori Design Antarmuka Pengguna</span>
                     <p class="experience-subtitle">
-                      Pusat Prestasi Nasional, Kementerian Pendidikan,
-                      Kebudayaan, Riset, dan Teknologi
+                      Pusat Prestasi Nasional, Kementerian Pendidikan, Kebudayaan, Riset, dan
+                      Teknologi
                     </p>
                     <p class="experience-subtitle">2023</p>
                   </div>
                   <p class="experience-subtitle" style="text-align: justify">
-                    Saya melakukan penelitian mendalam tentang preferensi
-                    pengguna, menganalisis tren terkini, dan menggabungkan
-                    elemen-elemen desain yang efektif. Saya fokus pada
-                    keselarasan visual, kegunaan, dan pengalaman pengguna yang
-                    optimal. Melalui perjuangan dan kerja keras, saya berhasil
-                    menciptakan antarmuka yang memenangkan persaingan sengit.
-                    Pengalaman ini memperkuat keyakinan saya dalam menjadi
-                    seorang desainer yang kreatif, terampil, dan berprestasi di
-                    masa depan.
+                    Saya melakukan penelitian mendalam tentang preferensi pengguna, menganalisis
+                    tren terkini, dan menggabungkan elemen-elemen desain yang efektif. Saya fokus
+                    pada keselarasan visual, kegunaan, dan pengalaman pengguna yang optimal. Melalui
+                    perjuangan dan kerja keras, saya berhasil menciptakan antarmuka yang memenangkan
+                    persaingan sengit. Pengalaman ini memperkuat keyakinan saya dalam menjadi
+                    seorang desainer yang kreatif, terampil, dan berprestasi di masa depan.
                   </p>
                 </div>
               </div>
               <div class="divider"></div>
               <span>Riawayat</span>
               <div class="profile-experience">
-                <img
-                  alt="award image"
-                  src="Assets/Profile/gdsc.png"
-                  class="experience-image"
-                />
+                <img alt="award image" src="Assets/Profile/gdsc.png" class="experience-image" />
                 <div class="experience-container">
                   <div>
-                    <span
-                      >Peserta Webinar #ProductSeries Workshop “Intro to UI
-                      Design"</span
-                    >
+                    <span>Peserta Webinar #ProductSeries Workshop “Intro to UI Design"</span>
                     <p class="experience-subtitle">
                       Google Developer Student Club University of Brawijaya
                     </p>
                     <p class="experience-subtitle">2023</p>
                   </div>
                   <p class="experience-subtitle" style="text-align: justify">
-                    Saya belajar tentang prinsip-prinsip desain yang efektif,
-                    teknik pemilihan warna yang tepat, dan bagaimana menyusun
-                    elemen-elemen desain dengan baik. Saya juga mendapatkan
-                    wawasan berharga tentang pengalaman pengguna yang memikat
-                    dan cara membuat prototipe interaktif yang menarik.
+                    Saya belajar tentang prinsip-prinsip desain yang efektif, teknik pemilihan warna
+                    yang tepat, dan bagaimana menyusun elemen-elemen desain dengan baik. Saya juga
+                    mendapatkan wawasan berharga tentang pengalaman pengguna yang memikat dan cara
+                    membuat prototipe interaktif yang menarik.
                   </p>
                 </div>
               </div>
               <div class="profile-experience">
-                <img
-                  alt="award image"
-                  src="Assets/Profile/4c.jpg"
-                  class="experience-image"
-                />
+                <img alt="award image" src="Assets/Profile/4c.jpg" class="experience-image" />
                 <div class="experience-container">
                   <div>
                     <span>Semifinalist 4C Kategori UI/UX Competition"</span>
-                    <p class="experience-subtitle">
-                      Fakultas Ilmu Komputer Universitas Brawijaya
-                    </p>
+                    <p class="experience-subtitle">Fakultas Ilmu Komputer Universitas Brawijaya</p>
                     <p class="experience-subtitle">2022 - 2023</p>
                   </div>
                 </div>
@@ -169,11 +135,7 @@
               <div class="divider"></div>
               <span>Akademik</span>
               <div class="profile-experience">
-                <img
-                  alt="award image"
-                  src="Assets/Profile/ub.jpg"
-                  class="experience-image"
-                />
+                <img alt="award image" src="Assets/Profile/ub.jpg" class="experience-image" />
                 <div class="experience-container">
                   <div>
                     <span>University of Brawijaya</span>
@@ -185,18 +147,12 @@
                 </div>
               </div>
               <div class="profile-experience">
-                <img
-                  alt="award image"
-                  src="Assets/Profile/cipus.jpg"
-                  class="experience-image"
-                />
+                <img alt="award image" src="Assets/Profile/cipus.jpg" class="experience-image" />
                 <div class="experience-container">
                   <div>
                     <span>SMA Negri 1 Cikarang Pusat</span>
-                    <p class="experience-subtitle">
-                      Natural Sciences
-                    </p>
-                    <p class="experience-subtitle">Jul 2019 - Jul 2022 </p>
+                    <p class="experience-subtitle">Natural Sciences</p>
+                    <p class="experience-subtitle">Jul 2019 - Jul 2022</p>
                   </div>
                 </div>
               </div>
@@ -221,7 +177,7 @@
               </div>
               <div>
                 <p>Email</p>
-                <span id="email"  >budistwn@gmail.com</span>
+                <span id="email">budistwn@gmail.com</span>
               </div>
             </div>
           </div>
