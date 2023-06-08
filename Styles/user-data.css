@@ -56,7 +56,8 @@ span {
   font-weight: bold;
 }
 
-.icon-text {
+.icon-text,
+.logout {
   display: flex;
   align-items: center;
   gap: 12px;

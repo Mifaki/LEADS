@@ -63,6 +63,15 @@ const academics = [
   },
 ];
 
+document.getElementById("logoutButton").addEventListener("click", logOut);
+
+function logOut() {
+  localStorage.removeItem("password");
+  localStorage.removeItem("username");
+  localStorage.removeItem("email");
+  window.location.href = "index.html";
+}
+
 function adjustTextareaHeight(textarea) {
   textarea.style.height = "auto";
   textarea.style.height = textarea.scrollHeight + "px";
