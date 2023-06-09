@@ -72,6 +72,7 @@ function logOut() {
   window.location.href = "index.html";
 }
 
+
 function adjustTextareaHeight(textarea) {
   textarea.style.height = "auto";
   textarea.style.height = textarea.scrollHeight + "px";
@@ -854,7 +855,7 @@ function displayAcademic(academics) {
     penyelenggaraInput.classList.add("input__field");
     penyelenggaraInput.type = "text";
     penyelenggaraInput.placeholder = " ";
-    penyelenggaraInput.value = academic.organization;
+    penyelenggaraInput.value = academic.degree;
 
     const penyelenggaraInputLabel = document.createElement("span");
     penyelenggaraInputLabel.classList.add("input__label");
