@@ -14,8 +14,8 @@ togglePassword.addEventListener("click", () => {
     passwordType === "password" ? "text" : "password"
   );
   togglePassword.src = togglePassword.src.includes("eye-solid.svg")
-    ? "../../../Assets/eye-slash-solid.svg"
-    : "../../../Assets/eye-solid.svg";
+    ? "Assets/eye-slash-solid.svg"
+    : "Assets/eye-solid.svg";
 });
 
 togglePasswordConfirmation.addEventListener("click", () => {
@@ -28,6 +28,6 @@ togglePasswordConfirmation.addEventListener("click", () => {
   togglePasswordConfirmation.src = togglePasswordConfirmation.src.includes(
     "eye-solid.svg"
   )
-    ? "../../../Assets/eye-slash-solid.svg"
-    : "../../../Assets/eye-solid.svg";
+    ? "Assets/eye-slash-solid.svg"
+    : "Assets/eye-solid.svg";
 });
