@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/MirzaHilmi/LEADS/main/Docs/thumbnail.png" alt="Thumbnail for LEADS website">
+![Thumbnail](https://github.com/Mifaki/LEADS/assets/107536877/1cb7e99c-f7a3-42a1-a375-f7f2e34355d8)
 
 # LEADS
 `Final Project for the Basic User Interface Course`
