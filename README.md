@@ -1,4 +1,4 @@
-![Thumbnail](https://github.com/Mifaki/LEADS/assets/107536877/1cb7e99c-f7a3-42a1-a375-f7f2e34355d8)
+![Thumbnail](https://github.com/Mifaki/LEADS/assets/107536877/397f6ffc-90c7-436d-95ff-831341d03048)
 
 # LEADS
 `Final Project for the Basic User Interface Course`
@@ -22,7 +22,6 @@ The Hi-Fi of this project is available in [here](https://www.figma.com/file/1xNv
 - [Mirza Hilmi](https://github.com/MirzaHilmi)
 - [Archie Vian](https://github.com/archieVian8)
 - [Ahmad Faiz Agustianto](https://github.com/Mifaki)
-- [Muhmmad Fadhil Ramadhan](https;//github.com)
 
 ## License
 
