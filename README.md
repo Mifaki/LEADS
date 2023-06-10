@@ -11,7 +11,7 @@ The project is a website designed for a fictional startup that aims to develop t
 
 #### Sitemap
 
-![Competitor Analytics](https://github.com/Mifaki/LEADS/assets/107536877/86a87cf7-82e4-472c-9872-b40ed9d2be80)
+![SItemap](https://github.com/Mifaki/LEADS/assets/107536877/a3d89c2d-79b5-47cd-b7fe-cec61e9509d0)
 
 ## HI-FI
 
